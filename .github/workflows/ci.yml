@@ -1,0 +1,23 @@
+name: Contract checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/gltest-direct
+            ~/.cache/genvm-linter
+          key: genvm-sdk-v0216-lint0110-${{ runner.os }}
+      - run: pytest -q
+      - run: genvm-lint check contracts/agent_scope.py
+      - run: genvm-lint schema contracts/agent_scope.py -o /tmp/schema.json

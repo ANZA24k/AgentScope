@@ -1,0 +1,177 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "approve_action": {
+      "params": [
+        [
+          "run_id",
+          "string"
+        ],
+        [
+          "action_id",
+          "string"
+        ],
+        [
+          "action_hash",
+          "string"
+        ],
+        [
+          "approved",
+          "bool"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "assess": {
+      "params": [
+        [
+          "run_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "challenge": {
+      "params": [
+        [
+          "run_id",
+          "string"
+        ],
+        [
+          "reason",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "effective_result": {
+      "params": [
+        [
+          "run_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_event": {
+      "params": [
+        [
+          "sequence",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_policy": {
+      "params": [
+        [
+          "policy_hash",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_receipt": {
+      "params": [
+        [
+          "run_id",
+          "string"
+        ],
+        [
+          "round_no",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_run": {
+      "params": [
+        [
+          "run_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_status": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "open_run": {
+      "params": [
+        [
+          "run_id",
+          "string"
+        ],
+        [
+          "policy_hash",
+          "string"
+        ],
+        [
+          "source_commit",
+          "string"
+        ],
+        [
+          "plan_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "register_policy": {
+      "params": [
+        [
+          "policy_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "seal_report": {
+      "params": [
+        [
+          "run_id",
+          "string"
+        ],
+        [
+          "report_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    }
+  }
+}

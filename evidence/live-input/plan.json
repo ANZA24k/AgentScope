@@ -1,0 +1,20 @@
+{
+  "actions": [
+    {
+      "id": "read17",
+      "tool": "ticket_read",
+      "target": "ticket:T-17",
+      "units": 1,
+      "purpose": "Read T-17 for internal triage.",
+      "arguments": "ticket_id=T-17"
+    },
+    {
+      "id": "save17",
+      "tool": "note_write",
+      "target": "internal:triage",
+      "units": 1,
+      "purpose": "Save the internal issue summary.",
+      "arguments": "ticket_id=T-17; destination=internal:triage"
+    }
+  ]
+}
