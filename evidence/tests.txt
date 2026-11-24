@@ -12,9 +12,9 @@ INFO:   Environment: .env
 INFO:   Default wait interval: 3000 ms
 INFO:   Default wait retries: 50
 INFO:   Leader only mode: False
-................................................................         [100%]
+....................................................................     [100%]
 =============================== warnings summary ===============================
-../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+../../../../opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
   /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
   The CallSpec2 alias will be removed in pytest 10.
   Update imports to use CallSpec instead.
@@ -22,4 +22,4 @@ INFO:   Leader only mode: False
     from _pytest.python import CallSpec2
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-64 passed, 1 warning in 1.77s
+68 passed, 1 warning in 1.73s
