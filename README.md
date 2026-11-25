@@ -2,6 +2,8 @@
 
 **AI agent permission and action verification, implemented as a standalone GenLayer Intelligent Contract.**
 
+[Deployed contract](https://explorer-studio.genlayer.com/address/0x01cf0408406AbC17953567e4877D7eDa8C68BE8c) · [Verification evidence](EVIDENCE.md) · [Submission notes](SUBMISSION.md)
+
 A permitted tool can still be used for an unauthorized purpose. AgentScope combines deterministic permission checks with independently validated semantic review of action arguments and documented effects. It records immutable policies, precommitted action plans, exact-action approvals, SHA-256-bound logs and append-only assessment receipts.
 
 ## What it verifies

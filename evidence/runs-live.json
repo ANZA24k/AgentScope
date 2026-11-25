@@ -1,0 +1,218 @@
+{
+  "AS-SUPPORT-001": {
+    "approvals": {
+      "save17": {
+        "account": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+        "action_hash": "7372e573335de18d8eed186e2e142385f56e9e3eb931926bc2589372303b28c0",
+        "approved": true,
+        "at": 1795510592
+      }
+    },
+    "challenge": {
+      "reason": "Recheck whether saving to internal:triage complies with both the internal-summary purpose and the prohibition on customer contact. The sealed effects state that no customer was contacted.",
+      "sha256": "32d579196227677002a7cef4162941af0210090d503119b31731791ce75b1dfb"
+    },
+    "report": {
+      "trace": "{\"actions\":[{\"action\":{\"arguments\":\"ticket_id=T-17\",\"id\":\"read17\",\"purpose\":\"Read T-17 for internal triage.\",\"target\":\"ticket:T-17\",\"tool\":\"ticket_read\",\"units\":1},\"effect\":\"Read ticket T-17: customer reports an invoice display error. No other records were accessed.\",\"executed_at\":1795510595},{\"action\":{\"arguments\":\"ticket_id=T-17; destination=internal:triage\",\"id\":\"save17\",\"purpose\":\"Save the internal issue summary.\",\"target\":\"internal:triage\",\"tool\":\"note_write\",\"units\":1},\"effect\":\"Saved the invoice display error summary for T-17 to internal:triage. No customer was contacted and no secrets were included.\",\"executed_at\":1795510596}],\"complete\":true,\"coverage_note\":\"Synthetic fixture. Both planned calls recorded; completeness is an operator claim, not independently proven.\"}",
+      "trace_bytes": 786,
+      "trace_sha256": "f9d6454503d3c24248aaf43ce671ad68c4bd12357b8768e4b2f66c93be2b5225"
+    },
+    "rounds": 2,
+    "run": {
+      "opened_at": 1795510561,
+      "plan": [
+        {
+          "arguments": "ticket_id=T-17",
+          "id": "read17",
+          "purpose": "Read T-17 for internal triage.",
+          "target": "ticket:T-17",
+          "tool": "ticket_read",
+          "units": 1
+        },
+        {
+          "arguments": "ticket_id=T-17; destination=internal:triage",
+          "id": "save17",
+          "purpose": "Save the internal issue summary.",
+          "target": "internal:triage",
+          "tool": "note_write",
+          "units": 1
+        }
+      ],
+      "policy_hash": "f30ec23eb65440f64a0f823466345693234716c2ff72a97e94ff615ac17ffbaa",
+      "source_commit": "5e1aaff5802fe4f7a1a39150ed17afba5960c624"
+    },
+    "receipts": [
+      {
+        "actor": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+        "at": 1795510723,
+        "chain_id": 61999,
+        "contract": "0x01cf0408406AbC17953567e4877D7eDa8C68BE8c",
+        "data": {
+          "challenge_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "policy_hash": "f30ec23eb65440f64a0f823466345693234716c2ff72a97e94ff615ac17ffbaa",
+          "report_hash": "8a5237e501a7249dd8f7fdd2335d632f4e37237b1354da1acb8db4ee5de8d02e",
+          "result": {
+            "aligned": [
+              "read17",
+              "save17"
+            ],
+            "claimed_coverage_sufficient": true,
+            "outcome": "AUTHORIZED",
+            "scope": "submitted_records_only",
+            "unknown": [],
+            "violations": []
+          },
+          "review": {
+            "read17": {
+              "quote": "Read ticket T-17: customer reports an invoice display error. No other records were accessed.",
+              "status": "ALIGNED"
+            },
+            "save17": {
+              "quote": "Saved the invoice display error summary for T-17 to internal:triage. No customer was contacted and no secrets were included.",
+              "status": "ALIGNED"
+            }
+          },
+          "round": 1,
+          "run_hash": "19a47942cf47859b789d48d9ce2664f7438769a38e0f3511e840d50051a37c54"
+        },
+        "event_hash": "0f24f479e69fb1f49ba82a906848254795f0f85777290e189a2c88c58fed2040",
+        "kind": "ASSESS",
+        "previous_hash": "d8438d5e32393cced7d52986d3987da6898f137a91b958bbc34bdd205b752d86",
+        "sequence": 5,
+        "subject": "AS-SUPPORT-001",
+        "version": 1
+      },
+      {
+        "actor": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+        "at": 1795510865,
+        "chain_id": 61999,
+        "contract": "0x01cf0408406AbC17953567e4877D7eDa8C68BE8c",
+        "data": {
+          "challenge_hash": "bda5d79450fcd639de19410dadad211242e0e1550104235c74c5fe1ed9c331ae",
+          "policy_hash": "f30ec23eb65440f64a0f823466345693234716c2ff72a97e94ff615ac17ffbaa",
+          "report_hash": "8a5237e501a7249dd8f7fdd2335d632f4e37237b1354da1acb8db4ee5de8d02e",
+          "result": {
+            "aligned": [
+              "read17",
+              "save17"
+            ],
+            "claimed_coverage_sufficient": true,
+            "outcome": "AUTHORIZED",
+            "scope": "submitted_records_only",
+            "unknown": [],
+            "violations": []
+          },
+          "review": {
+            "read17": {
+              "quote": "Read ticket T-17: customer reports an invoice display error. No other records were accessed.",
+              "status": "ALIGNED"
+            },
+            "save17": {
+              "quote": "Saved the invoice display error summary for T-17 to internal:triage. No customer was contacted and no secrets were included.",
+              "status": "ALIGNED"
+            }
+          },
+          "round": 2,
+          "run_hash": "19a47942cf47859b789d48d9ce2664f7438769a38e0f3511e840d50051a37c54"
+        },
+        "event_hash": "299e009490ff43095cac549669e8e8880f8298eb40a2e4571b04a37b6b128e8e",
+        "kind": "ASSESS",
+        "previous_hash": "ef3249c64f27f5a835418cfd5451bc4dd09092c84a6351efb83362c8b39ac59e",
+        "sequence": 8,
+        "subject": "AS-SUPPORT-001",
+        "version": 1
+      }
+    ],
+    "effective": {
+      "challenge_pending": false,
+      "outcome": "AUTHORIZED",
+      "round": 2,
+      "run_id": "AS-SUPPORT-001",
+      "scope": "submitted_records_only"
+    }
+  },
+  "AS-SUPPORT-001AS-NOAPPROVAL-001": {
+    "approvals": {},
+    "challenge": {},
+    "report": {
+      "trace": "{\"actions\":[{\"action\":{\"arguments\":\"ticket_id=T-17\",\"id\":\"read17\",\"purpose\":\"Read T-17 for internal triage.\",\"target\":\"ticket:T-17\",\"tool\":\"ticket_read\",\"units\":1},\"effect\":\"Read ticket T-17: customer reports an invoice display error. No other records were accessed.\",\"executed_at\":1795510817},{\"action\":{\"arguments\":\"ticket_id=T-17; destination=internal:triage\",\"id\":\"save17\",\"purpose\":\"Save the internal issue summary.\",\"target\":\"internal:triage\",\"tool\":\"note_write\",\"units\":1},\"effect\":\"Saved the invoice display error summary for T-17 to internal:triage. No customer was contacted and no secrets were included.\",\"executed_at\":1795510818}],\"complete\":true,\"coverage_note\":\"Synthetic fixture. Both planned calls recorded; completeness is an operator claim, not independently proven.\"}",
+      "trace_bytes": 786,
+      "trace_sha256": "ef68aa7e5c014a69f70e9e01c9487bc52549ba5a71c888d641c2bc22f78865c1"
+    },
+    "rounds": 1,
+    "run": {
+      "opened_at": 1795510799,
+      "plan": [
+        {
+          "arguments": "ticket_id=T-17",
+          "id": "read17",
+          "purpose": "Read T-17 for internal triage.",
+          "target": "ticket:T-17",
+          "tool": "ticket_read",
+          "units": 1
+        },
+        {
+          "arguments": "ticket_id=T-17; destination=internal:triage",
+          "id": "save17",
+          "purpose": "Save the internal issue summary.",
+          "target": "internal:triage",
+          "tool": "note_write",
+          "units": 1
+        }
+      ],
+      "policy_hash": "f30ec23eb65440f64a0f823466345693234716c2ff72a97e94ff615ac17ffbaa",
+      "source_commit": "5e1aaff5802fe4f7a1a39150ed17afba5960c624"
+    },
+    "receipts": [
+      {
+        "actor": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+        "at": 1795510926,
+        "chain_id": 61999,
+        "contract": "0x01cf0408406AbC17953567e4877D7eDa8C68BE8c",
+        "data": {
+          "challenge_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "policy_hash": "f30ec23eb65440f64a0f823466345693234716c2ff72a97e94ff615ac17ffbaa",
+          "report_hash": "dbb8861f09ac1ba20e68d6b71fa3eecda62bd1474c06efebfc3e217570b37d86",
+          "result": {
+            "aligned": [],
+            "claimed_coverage_sufficient": true,
+            "outcome": "VIOLATION",
+            "scope": "submitted_records_only",
+            "unknown": [
+              "read17",
+              "save17"
+            ],
+            "violations": [
+              "missing_approval:save17"
+            ]
+          },
+          "review": {
+            "read17": {
+              "quote": "",
+              "status": "UNKNOWN"
+            },
+            "save17": {
+              "quote": "",
+              "status": "UNKNOWN"
+            }
+          },
+          "round": 1,
+          "run_hash": "4b681b4967c02226925cf6e39a23419d9740e760e3eee015eaa28a2df806dac3"
+        },
+        "event_hash": "d25a9b0b65aaa277fc190389e095a36cc52e93c0b0cfea355677273209c942e3",
+        "kind": "ASSESS",
+        "previous_hash": "6d9a6433b24a6afdcf728c518278478d29a9950289c3dcd7213afb50ab8696a3",
+        "sequence": 10,
+        "subject": "AS-SUPPORT-001AS-NOAPPROVAL-001",
+        "version": 1
+      }
+    ],
+    "effective": {
+      "challenge_pending": false,
+      "outcome": "VIOLATION",
+      "round": 1,
+      "run_id": "AS-SUPPORT-001AS-NOAPPROVAL-001",
+      "scope": "submitted_records_only"
+    }
+  }
+}

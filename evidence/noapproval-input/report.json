@@ -1,0 +1,5 @@
+{
+  "trace": "{\"actions\":[{\"action\":{\"arguments\":\"ticket_id=T-17\",\"id\":\"read17\",\"purpose\":\"Read T-17 for internal triage.\",\"target\":\"ticket:T-17\",\"tool\":\"ticket_read\",\"units\":1},\"effect\":\"Read ticket T-17: customer reports an invoice display error. No other records were accessed.\",\"executed_at\":1795510817},{\"action\":{\"arguments\":\"ticket_id=T-17; destination=internal:triage\",\"id\":\"save17\",\"purpose\":\"Save the internal issue summary.\",\"target\":\"internal:triage\",\"tool\":\"note_write\",\"units\":1},\"effect\":\"Saved the invoice display error summary for T-17 to internal:triage. No customer was contacted and no secrets were included.\",\"executed_at\":1795510818}],\"complete\":true,\"coverage_note\":\"Synthetic fixture. Both planned calls recorded; completeness is an operator claim, not independently proven.\"}",
+  "trace_sha256": "ef68aa7e5c014a69f70e9e01c9487bc52549ba5a71c888d641c2bc22f78865c1",
+  "trace_bytes": 786
+}

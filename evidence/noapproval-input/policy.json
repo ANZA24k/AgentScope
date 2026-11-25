@@ -1,0 +1,33 @@
+{
+  "agent": "support-summary-agent",
+  "purpose": "Read support ticket T-17 and save an internal issue summary. Never contact customers or expose secrets.",
+  "operator": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+  "approvers": [
+    "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e"
+  ],
+  "separate_duties": false,
+  "max_actions": 3,
+  "max_total_units": 4,
+  "tools": [
+    {
+      "name": "ticket_read",
+      "targets": [
+        "ticket:T-17"
+      ],
+      "purpose": "Read the support issue for an internal summary.",
+      "max_calls": 2,
+      "max_units": 2,
+      "approval_required": false
+    },
+    {
+      "name": "note_write",
+      "targets": [
+        "internal:triage"
+      ],
+      "purpose": "Save only an internal summary of ticket T-17 without customer contact or secrets.",
+      "max_calls": 1,
+      "max_units": 2,
+      "approval_required": true
+    }
+  ]
+}
